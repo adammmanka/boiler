@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import '@rainbow-me/rainbowkit/styles.css';
 import type { AppProps } from 'next/app'
-
+import { themeChange } from "theme-change";
 import {
   RainbowKitProvider,
   getDefaultWallets,
@@ -23,6 +23,9 @@ import { rainbowMagicConnector } from "../utils/RainbowMagicConnector";
 import { WagmiConfig, createClient, allChains, configureChains } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
+
+import { useEffect, useState } from "react";
+import Layout from "../components/layout"
 
 const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID || "";
 const S3_BUCKET_URL = process.env.S3_BUCKET_URL || "united-io-playground-nfts";
@@ -68,11 +71,18 @@ const wagmiClient = createClient({
 
 
 export default function App({ Component, pageProps }: AppProps) {
+
+  useEffect(() => {
+    themeChange(false);
+    // 👆 false parameter is required for react project
+  }, []);
   
   return (
       <WagmiConfig client={wagmiClient}>
         <RainbowKitProvider chains={chains}>
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+            </Layout>  
         </RainbowKitProvider>
       </WagmiConfig>
   );

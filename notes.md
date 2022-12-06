@@ -12,4 +12,6 @@ yarn add magic-sdk
 
 yarn add @rainbow-me/rainbowkit
 
-yarn add @everipedia/wagmi-magic-connector
+yarn add @everipedia/wagmi-magic-connector daisyui react-daisyui @tailwindcss/typography react-icons
+three @react-three/fiber @react-three/drei
+yarn add theme-change
