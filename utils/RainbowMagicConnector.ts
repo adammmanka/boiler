@@ -14,7 +14,7 @@ export const rainbowMagicConnector = ({ chains }: any) => ({
       options: {
         apiKey: NEXT_PUBLIC_MAGIC_LINK_PK,
         accentColor: "#ff0000",
-        customLogo: "https://example.com/logo.png",
+        customLogo: "./mglink-ico.png",
         headerText: "Login to your account",
         isDarkMode: true,
         callbackUrl: "/dashboard", //optional
