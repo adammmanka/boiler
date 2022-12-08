@@ -15,3 +15,6 @@ yarn add @rainbow-me/rainbowkit
 yarn add @everipedia/wagmi-magic-connector daisyui react-daisyui @tailwindcss/typography react-icons
 three @react-three/fiber @react-three/drei
 yarn add theme-change
+yarn add axios
+yarn add swr
+@apollo/client graphql

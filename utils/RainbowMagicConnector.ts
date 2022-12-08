@@ -15,9 +15,9 @@ export const rainbowMagicConnector = ({ chains }: any) => ({
         apiKey: NEXT_PUBLIC_MAGIC_LINK_PK,
         accentColor: "#ff0000",
         customLogo: "./mglink-ico.png",
-        headerText: "Login to your account",
+        // headerText: "Login to your account",
         isDarkMode: true,
-        callbackUrl: "/dashboard", //optional
+        // callbackUrl: "/dashboard", //optional
         // network: {
         //   rpcUrl:
         //     "https://eth-mainnet.g.alchemy.com/v2/5tsd5GN171CXR8VF8PG5-xI3Lc2a3jvS", // your ethereum, polygon, or optimism mainnet/testnet rpc URL
