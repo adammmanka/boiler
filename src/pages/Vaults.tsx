@@ -1,14 +1,8 @@
-//  /import Vaults from "@/components/vault-test-apollo";
-// import Markets from "@/components/market-test-apollo"
-
 import AMarkets from "@/components/vaults-test-apollo";
 
 export default function Dashboard() {
 	return(
 	<>
-	<div>test</div>
-	{/* <VaultList></VaultList> */}
-	{/* <Vaults /> */}
 	<AMarkets />
 	</>
 	)

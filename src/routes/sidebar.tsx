@@ -4,6 +4,7 @@ CalendarIcon,
 CogIcon,
 FolderIcon,
 HomeIcon,
+LockClosedIcon,
 InboxIcon,
 UsersIcon,
 } from '@heroicons/react/outline'
@@ -55,9 +56,9 @@ export function routeIsActive(pathname: String, route: INavigation): boolean {
 const navigation: INavigation[] = [
     { name: 'Dashboard', href: '/', icon: HomeIcon, current: true, exact: true },
     {
-    name: 'Theme Preview',
-    href: '/themePreview',
-    icon: UsersIcon,
+    name: 'Vaults',
+    href: '/Vaults',
+    icon: LockClosedIcon,
     current: false,
     },
     { name: '404', href: '/404', icon: FolderIcon, current: false },
