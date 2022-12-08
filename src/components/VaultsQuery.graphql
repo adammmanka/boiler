@@ -1,0 +1,14 @@
+query {
+  pools(first: 10) {
+    id
+    token0Price
+    token1Price
+    token0 {
+      name
+    }
+    token1 {
+      name
+    }
+    liquidity
+  }
+}

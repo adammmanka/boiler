@@ -1,10 +1,10 @@
-import VaultList from "../components/vault-test-swr";
+
 
 export default function Dashboard() {
 	return(
 	<>
 	<div>test</div>
-	<VaultList></VaultList>
+	{/* <VaultList></VaultList> */}
 	</>
 	)
 }

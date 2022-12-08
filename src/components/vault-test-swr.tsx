@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useSWRInfinite from "swr/infinite";
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 const PAGE_SIZE = 6;
 
 export default function VaultList() {
@@ -64,8 +64,8 @@ export default function VaultList() {
       {isEmpty ? <p>Yay, no issues found.</p> : null}
       {issues.map((issue) => {
         return (
-          <p key={issue.id} style={{ margin: "6px 0" }}>
-            - {issue.title}
+          <p key={issue?.id} style={{ margin: "6px 0" }}>
+            - {issue?.title}
           </p>
         );
       })}
